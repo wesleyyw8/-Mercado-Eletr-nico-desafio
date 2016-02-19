@@ -3,3 +3,33 @@
   width: 184px;
   height: 53px;
 }
+.principal .loggedAsContainer {
+  min-width: 180px;
+  margin-top: 5px;
+}
+.principal .loggedAsContainer .leftIcon {
+  float: left;
+}
+.principal .loggedAsContainer .leftIcon span {
+  font-size: 40px;
+  margin-top: 2px;
+}
+.principal .loggedAsContainer .content {
+  min-width: 90px;
+  float: left;
+  height: 100%;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.principal .loggedAsContainer .content .welcome {
+  font-size: 12px;
+}
+.principal .loggedAsContainer .content .userName {
+  font-weight: bold;
+  width: auto;
+}
+.principal .loggedAsContainer .rightIcon {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
