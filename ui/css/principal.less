@@ -1,4 +1,7 @@
 .principal{
+	.topBar{
+		margin-bottom: 0px;
+	}
 	.logoMercadoEletronico{
 		background: url(img/sprite.png) -50px -50px no-repeat;
 		width: 184px;
@@ -56,6 +59,33 @@
 			width: 80px;
 			height: 80px;
 			margin-top: 5px;
+		}
+	}
+	.sideBar{
+		width: auto;
+		background: #666666;
+		height: 100%;
+		position: fixed;
+		.icon{
+			span{
+				font-size: 35px;
+			}
+		}
+		.text{
+			display: block;
+			line-height: 35px;
+		}
+	}
+	@media only screen and (max-width: 1280px) {
+		.sideBar{
+			.text{
+				display: none;
+			}
+		}
+		.sideBar:hover{
+			.text{
+				display: block;
+			}
 		}
 	}
 }
