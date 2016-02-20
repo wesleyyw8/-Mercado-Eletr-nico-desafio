@@ -34,9 +34,26 @@
   margin-left: 10px;
 }
 .principal .userDetails {
-  padding: 0;
+  padding: 10px 0px 5px 0;
   border: none;
   width: 300px;
   margin-right: 10px;
   margin-top: 55px;
+}
+.principal .userDetails .row {
+  margin-left: 0px;
+}
+.principal .userDetails .row .nameUser {
+  font-weight: bold;
+}
+.principal .userDetails .row .lastLogin {
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.principal .userDetails .userPicture {
+  width: 80px;
+  height: 80px;
+  margin-top: 5px;
 }
