@@ -1,85 +1,95 @@
-.principal .topBar {
+.index .topBar {
   margin-bottom: 10px;
   border-bottom: none;
   padding-bottom: 5px;
 }
-.principal .logoMercadoEletronico {
+.index .logoMercadoEletronico {
   background: url(img/sprite.png) -50px -50px no-repeat;
   width: 184px;
   height: 53px;
 }
-.principal .loggedAsContainer {
+.index .loggedAsContainer {
   min-width: 180px;
   margin-top: 5px;
 }
-.principal .loggedAsContainer .leftIcon {
+.index .loggedAsContainer .leftIcon {
   float: left;
 }
-.principal .loggedAsContainer .leftIcon span {
+.index .loggedAsContainer .leftIcon span {
   font-size: 40px;
   margin-top: 2px;
 }
-.principal .loggedAsContainer .content {
+.index .loggedAsContainer .content {
   min-width: 90px;
   float: left;
   height: 100%;
   margin-top: 5px;
   margin-left: 5px;
 }
-.principal .loggedAsContainer .content .welcome {
+.index .loggedAsContainer .content .welcome {
   font-size: 12px;
 }
-.principal .loggedAsContainer .content .userName {
+.index .loggedAsContainer .content .userName {
   font-weight: bold;
   width: auto;
 }
-.principal .loggedAsContainer .rightIcon {
+.index .loggedAsContainer .rightIcon {
   float: left;
   margin-top: 10px;
   margin-left: 10px;
 }
-.principal .userDetails {
+.index .userDetails {
   padding: 10px 0px 5px 0;
   border: none;
   width: 300px;
   margin-right: 10px;
   margin-top: 55px;
 }
-.principal .userDetails .row {
+.index .userDetails .row {
   margin-left: 0px;
 }
-.principal .userDetails .row .nameUser {
+.index .userDetails .row .nameUser {
   font-weight: bold;
 }
-.principal .userDetails .row .lastLogin {
+.index .userDetails .row .lastLogin {
   font-size: 12px;
   color: #ccc;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.principal .userDetails .userPicture {
+.index .userDetails .userPicture {
   width: 80px;
   height: 80px;
   margin-top: 5px;
 }
-.principal .sideBar {
+.index .sideBar {
   width: auto;
   background: #666666;
   height: 100%;
   position: fixed;
 }
-.principal .sideBar .icon span {
+.index .sideBar .icon span {
   font-size: 35px;
 }
-.principal .sideBar .text {
+.index .sideBar .text {
   display: block;
   line-height: 35px;
 }
+.index .page-content {
+  margin-left: 180px;
+}
 @media only screen and (max-width: 1280px) {
-  .principal .sideBar .text {
+  .index .sideBar .text {
     display: none;
   }
-  .principal .sideBar:hover .text {
+  .index .sideBar + .page-content {
+    margin-left: 100px;
+  }
+  .index .sideBar:hover .text {
     display: block;
   }
+  .index .sideBar:hover + .page-content {
+    margin-left: 180px;
+  }
 }
+

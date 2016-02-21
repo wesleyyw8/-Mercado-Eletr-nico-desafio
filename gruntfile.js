@@ -1,9 +1,19 @@
 module.exports = function(grunt){
 	grunt.initConfig({
+		concat:{
+			js:{
+				src: ['ui/controllers/*.js'],
+				dest: 'ui/application.js'
+			}
+		},
 	    less: {
 	      	'ui/style.css': ['ui/css/*.less']
 	    },
 		watch: {
+			scripts: {
+		        files: 'ui/controllers/*.js',
+		        tasks: ['concat']
+			},
 			less: {
 	            files: ['ui/css/*.less'],
 	            tasks: ["less"],
@@ -13,18 +23,14 @@ module.exports = function(grunt){
 	        },
 			livereload: {
 		        options: {
-		          livereload: true,
+		          livereload: true
 		        },
-		        files: ['ui/css/*.less']
+		        files: ['ui/controllers/*.js','ui/css/*.less']
 			}
 		}
 	});
-	//grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-less');
-	//grunt.registerTask('default', ['concat:js','watch']);
-	//grunt.registerTask('default', ['concat:js','watch']);
-	grunt.registerTask('default', ['less','watch']);
-
-	//grunt.registerTask('default', ['concat']);
+	grunt.registerTask('default', ['concat:js','less','watch']);
 };
