@@ -76,66 +76,17 @@
 			    		</div>
 			    	</div>
 			    </div>			   	
-		  </div><!-- /.container-fluid -->
+		  </div>
 		</nav>
 		<div class="sideBar">
 			<div class="container-fluid">
-				<div class="row">
+				<div class="row" ng-repeat="item in sideBarItems">
 					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon">
-						<span class="fa fa-home"></span>
+						<span class="{{item.icon}}"></span>
 					</div>
 					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-						<a href="#" class="text">Home</a>
+						<a href="#" class="text">{{item.text}}</a>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon">
-						<span class="fa fa-align-left"></span>
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-						<a href="#" class="text">Lorem Ipsum</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon">
-						<span class="fa fa-usd"></span>
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-						<a href="#" class="text">Lorem Ipsum</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon">
-						<span class="fa fa-shopping-cart"></span>
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-						<a href="#" class="text">Lorem Ipsum</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon">
-						<span class="fa fa-globe"></span>
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-						<a href="#" class="text">Lorem Ipsum</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon">
-						<span class="fa fa-pencil"></span>
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-						<a href="#" class="text">Lorem Ipsum</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 icon">
-						<span class="fa fa-question-circle"></span>
-					</div>
-					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-						<a href="#" class="text">Lorem Ipsum</a>
-					</div>
-				</div>
 			</div>
 		</div>
 		<div class="page-content">
