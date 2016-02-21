@@ -67,6 +67,8 @@
   background: #666666;
   height: 100%;
   position: fixed;
+  color: white;
+  padding-top: 10px;
 }
 .index .sideBar .icon span {
   font-size: 35px;
@@ -74,6 +76,7 @@
 .index .sideBar .text {
   display: block;
   line-height: 35px;
+  color: white;
 }
 .index .page-content {
   margin-left: 180px;
@@ -97,28 +100,28 @@
   margin: 0 10px 0 10px;
   background-color: #ededed;
 }
-.principal .itemCode {
+
+.thumbnailItem .itemCode {
   color: gray;
   font-size: 14px;
   font-weight: bold;
 }
-.principal .thumbImageContainer {
+.thumbnailItem .thumbImageContainer {
   border: 1px solid black;
 }
-.principal .thumbImageContainer .thumbImage {
+.thumbnailItem .thumbImageContainer .thumbImage {
   height: 180px;
 }
 @media only screen and (max-width: 1280px) {
-  .principal .thumbImageContainer .thumbImage {
+  .thumbnailItem .thumbImageContainer .thumbImage {
     height: 120px;
   }
 }
-.principal .price {
+.thumbnailItem .price {
   font-size: 30px;
   font-weight: bold;
   color: gray;
 }
-.principal .btnLabel {
+.thumbnailItem .btnLabel {
   margin-left: 5px;
 }
-
