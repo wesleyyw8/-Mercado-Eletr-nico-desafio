@@ -2,20 +2,20 @@ module.exports = function(grunt){
 	grunt.initConfig({
 		concat:{
 			js:{
-				src: ['ui/controllers/*.js'],
+				src: ['ui/controllers/*.js','ui/directives/{,*/}*.js'],
 				dest: 'ui/application.js'
 			}
 		},
 	    less: {
-	      	'ui/style.css': ['ui/css/*.less']
+	      	'ui/style.css': ['ui/css/*.less','ui/directives/{,*/}*.less']
 	    },
 		watch: {
 			scripts: {
-		        files: 'ui/controllers/*.js',
+		        files: ['ui/controllers/*.js','ui/directives/{,*/}*.js'],
 		        tasks: ['concat']
 			},
 			less: {
-	            files: ['ui/css/*.less'],
+	            files: ['ui/css/*.less','ui/directives/{,*/}*.less'],
 	            tasks: ["less"],
 	            options: {
 	                livereload: true
@@ -25,7 +25,7 @@ module.exports = function(grunt){
 		        options: {
 		          livereload: true
 		        },
-		        files: ['ui/controllers/*.js','ui/css/*.less']
+		        files: ['ui/controllers/*.js','ui/css/*.less','ui/directives/{,*/}*.js', 'ui/directives/{,*/}*.less']
 			}
 		}
 	});

@@ -1,52 +1,5 @@
 <div class="principal">
 	<div class="row">
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<div class="thumbnail">
-				<div class="caption">
-					<span class="itemCode">#COD03021</span>
-				</div>
-    	    	<div class="thumbImageContainer text-center">
-    				<img src="../img/sufite.jpg" class='thumbImage'>
-    			</div>	
-	    		<div class="caption">
-			        <p>Papel Sufite 75g Alcalino 210x297</p>
-			        <p>A4 Chamex Office Ipaper</p>
-			        <p class="price">R$ 15,90</p>
-			        <p><button type="button" class="btn btn-primary btn-lg btn-block"><span class="fa fa-shopping-cart"></span><span class="btnLabel">CARRINHO</span></button></p>
-	      		</div>
-	    	</div>
-		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<div class="thumbnail">
-				<div class="caption">
-					<span class="itemCode">#COD03021</span>
-				</div>
-		    	<div class="thumbImageContainer text-center">
-					<img src="../img/sufite.jpg" class='thumbImage'>
-				</div>	
-	    		<div class="caption">
-			        <p>Papel Sufite 75g Alcalino 210x297</p>
-			        <p>A4 Chamex Office Ipaper</p>
-			        <p class="price">R$ 15,90</p>
-			        <p><button type="button" class="btn btn-primary btn-lg btn-block"><span class="fa fa-shopping-cart"></span><span class="btnLabel">CARRINHO</span></button></p>
-	      		</div>
-	    	</div>
-		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<div class="thumbnail">
-				<div class="caption">
-					<span class="itemCode">#COD03021</span>
-				</div>
-				<div class="thumbImageContainer text-center">
-					<img src="../img/sufite.jpg" class='thumbImage'>
-				</div>		    	
-	    		<div class="caption">
-			        <p>Papel Sufite 75g Alcalino 210x297</p>
-			        <p>A4 Chamex Office Ipaper</p>
-			        <p class="price">R$ 15,90</p>
-			        <p><button type="button" class="btn btn-primary btn-lg btn-block"><span class="fa fa-shopping-cart"></span><span class="btnLabel">CARRINHO</span></button></p>
-	      		</div>
-	    	</div>
-		</div>
+		<thumbnail ng-repeat="product in products" product="product"></thumbnail>
 	</div>
 </div>
