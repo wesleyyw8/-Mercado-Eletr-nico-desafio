@@ -1,3 +1,6 @@
+.index {
+  overflow-x: hidden;
+}
 .index .topBar {
   margin-bottom: 10px;
   border-bottom: none;
@@ -68,7 +71,7 @@
   height: 100%;
   position: fixed;
   color: white;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .index .sideBar .icon span {
   font-size: 35px;
@@ -77,6 +80,9 @@
   display: block;
   line-height: 35px;
   color: white;
+}
+.index .sideBar .row {
+  margin-bottom: 20px;
 }
 .index .page-content {
   margin-left: 180px;
@@ -97,8 +103,32 @@
 }
 
 .principal {
-  margin: 0 10px 0 10px;
+  bottom: 0;
+  position: absolute;
+  top: 69px;
   background-color: #ededed;
+  padding-top: 20px;
+}
+.principal .row {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.principal .carousel {
+  border: 1px solid black;
+  overflow: hidden;
+}
+.principal .carousel .carousel-inner {
+  background-color: white;
+}
+.principal .carousel .carousel-inner img {
+  height: 240px;
+}
+.principal .calendar {
+  height: 250px;
+}
+.principal .calendar .datepicker {
+  background-color: white;
+  margin-left: 30px;
 }
 
 .thumbnailItem .itemCode {
@@ -116,6 +146,9 @@
   .thumbnailItem .thumbImageContainer .thumbImage {
     height: 120px;
   }
+}
+.thumbnailItem .title {
+  height: 40px;
 }
 .thumbnailItem .price {
   font-size: 30px;

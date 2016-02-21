@@ -1,5 +1,30 @@
 <div class="principal">
 	<div class="row">
+		<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+			<div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div ng-class="item.isActive ? 'item active' : 'item'" ng-repeat="item in carouselImages">
+			    	<img src="../img/{{item.path}}">
+			    </div>
+			  </div>
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#carouselPrincipal" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carouselPrincipal" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+		<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 calendar">
+			<input type="hidden">
+			<!-- <span class="form-control" ng-model="selectedDate" id="testeabc" name="date" bs-datepicker></span> -->
+		</div>
+	</div>
+	<div class="row">
 		<thumbnail ng-repeat="product in products" product="product"></thumbnail>
 	</div>
 </div>

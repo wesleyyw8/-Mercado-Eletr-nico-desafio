@@ -1,5 +1,24 @@
-app.controller('PrincipalController', ['$scope','$http','$routeParams', function($scope,$http, routeParams){
+app.controller('PrincipalController', ['$scope','$http','$routeParams','$datepicker','$timeout', function($scope,$http, routeParams, $datepicker, $timeout){
+	angular.element(".calendar input").datepicker({});
+	angular.element(".calendar").datepicker('show');
+	
+	populateCarousel();
 	populateProducts();
+	function populateCarousel(){
+		$scope.carouselImages = [];
+		$scope.carouselImages.push({
+			path: "city.jpg",
+			isActive: true
+		});
+		$scope.carouselImages.push({
+			path: "tree.jpg",
+			isActive: false
+		});
+		$scope.carouselImages.push({
+			path: "night.jpg",
+			isActive: false
+		});
+	}
 	function populateProducts(){
 		$scope.products = [];
 		$scope.products.push({
