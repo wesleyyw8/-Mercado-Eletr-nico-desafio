@@ -6,7 +6,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider,$loca
 			templateUrl: '../views/principal.html',
 			controller: 'PrincipalController'
 		}).
+		when('/login', {
+			templateUrl: '../views/login.html',
+			controller: 'LoginController'
+		}).
 		otherwise({
-			redirectTo: '/principal'
+			redirectTo: '/login'
 		});
 }]);

@@ -6,8 +6,12 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider,$loca
 			templateUrl: '../views/principal.html',
 			controller: 'PrincipalController'
 		}).
+		when('/login', {
+			templateUrl: '../views/login.html',
+			controller: 'LoginController'
+		}).
 		otherwise({
-			redirectTo: '/principal'
+			redirectTo: '/login'
 		});
 }]);
 
@@ -52,7 +56,7 @@ app.controller('IndexController', ['$scope','$http','$routeParams', function($sc
 }]); 
 
 app.controller('LoginController', ['$scope','$http','$routeParams', function($scope,$http, routeParams){
-
+	
 }]);
 app.controller('PrincipalController', ['$scope','$http','$routeParams','$datepicker','$timeout', function($scope,$http, routeParams, $datepicker, $timeout){
 	angular.element(".calendar input").datepicker({});
