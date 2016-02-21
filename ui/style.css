@@ -104,8 +104,7 @@
 
 .principal {
   bottom: 0;
-  position: absolute;
-  top: 69px;
+  position: relative;
   background-color: #ededed;
   padding-top: 20px;
 }
@@ -129,6 +128,22 @@
 .principal .calendar .datepicker {
   background-color: white;
   margin-left: 30px;
+}
+@media only screen and (max-width: 1240px) {
+  .principal .calendar {
+    margin-top: 10px;
+  }
+  .principal .calendar .datepicker {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1241px) {
+  .principal {
+    position: absolute;
+    bottom: 0;
+    top: 69px;
+  }
 }
 
 .thumbnailItem .itemCode {
