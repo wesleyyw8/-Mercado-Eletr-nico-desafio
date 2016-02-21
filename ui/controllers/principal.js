@@ -1,4 +1,4 @@
-app.controller('PrincipalController', ['$scope','$http','$routeParams','$datepicker','$timeout', function($scope,$http, routeParams, $datepicker, $timeout){
+app.controller('PrincipalController', ['$scope','$http','$routeParams','$timeout', function($scope,$http, routeParams, $timeout){
 	angular.element(".calendar input").datepicker({});
 	angular.element(".calendar").datepicker('show');
 	

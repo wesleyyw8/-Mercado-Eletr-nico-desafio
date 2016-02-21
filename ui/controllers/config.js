@@ -1,4 +1,4 @@
-var app = angular.module('desafioMercadoEletronicoApp',['ngRoute','mgcrea.ngStrap']);
+var app = angular.module('desafioMercadoEletronicoApp',['ngRoute']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider,$locationProvider){
 	$routeProvider.

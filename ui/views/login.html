@@ -5,22 +5,22 @@
 		</div>
 	  	<div class="form-group">
 	    	<div class="labelFor">Email</div>
-	    	<input type="email" class="form-control">
+	    	<input type="text" class="form-control" ng-model="user.email">
 	  	</div>
 	  	<div class="form-group">
 	    	<div class="labelFor">Senha</div>
-	    	<input type="password" class="form-control">
+	    	<input type="password" class="form-control" ng-model="user.password">
 	  	</div>
 	  	<div class="form-group">
 	   		<div class="labelFor">Nova senha</div>
-	   		<input type="password" class="form-control">
+	   		<input type="password" class="form-control" ng-model="user.newPassword">
 	  	</div>
 	  	<div class="form-group">
 	    	<div class="labelFor">Confirme a nova senha</div>
-	    	<input type="password" class="form-control">
+	    	<input type="password" class="form-control" ng-model="user.confirmNewPassword">
 	  	</div>
 	  	<div class="form-group">
-	  		<button type="button" class="btn btn-primary btn-lg btn-block">SALVAR</button>
+	  		<button type="button" class="btn btn-primary btn-lg btn-block" ng-click="savePassword()">SALVAR</button>
 	  	</div>
 	</form>
 </div>

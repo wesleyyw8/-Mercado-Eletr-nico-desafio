@@ -3,7 +3,7 @@ var app = express();
 
 app.use(express.static(__dirname + '/ui')); 
 
-var portNumber = 3000;
+var portNumber = 3001;
 var server = app.listen(portNumber,function(){
     console.log("We have started our server on port! "+portNumber);
 });
