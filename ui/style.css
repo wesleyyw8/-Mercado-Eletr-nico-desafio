@@ -47,9 +47,14 @@
   width: 300px;
   margin-right: 10px;
   margin-top: 55px;
+  position: fixed;
+  top: 0;
+  left: auto;
+  right: 0;
 }
 .index .userDetails .row {
   margin-left: 0px;
+  margin-right: 0px;
 }
 .index .userDetails .row .nameUser {
   font-weight: bold;
@@ -64,6 +69,11 @@
   width: 80px;
   height: 80px;
   margin-top: 5px;
+}
+@media only screen and (max-width: 1280px) {
+  .index .userDetails {
+    width: 220px;
+  }
 }
 .index .sideBar {
   width: auto;

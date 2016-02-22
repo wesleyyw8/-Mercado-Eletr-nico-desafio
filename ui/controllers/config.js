@@ -1,4 +1,4 @@
-var app = angular.module('desafioMercadoEletronicoApp',['ngRoute']);
+var app = angular.module('desafioMercadoEletronicoApp',['ngRoute','toaster', 'ngAnimate']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider,$locationProvider){
 	$routeProvider.
